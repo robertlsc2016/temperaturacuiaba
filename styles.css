@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    /* border: 1px solid  black; */
+
+    box-sizing: border-box;
+    font-family: 'Quantico', sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+
+    border: none;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(97deg, rgba(255,255,255,1) 0%, rgba(245,240,152,0.9934348739495799) 100%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+#corpo{
+    width: 90%;
+    height: 90%;
+
+    justify-content: start;
+    align-items: center;    
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------------- LINHA ---------------------------------------- */
+
+#linha{
+    width: 1px;
+    height: 80%;
+
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+
+/* ---------------------------------------- SCREEN CENTER ---------------------------------------- */
+
+#screenCenter {
+    width: 80%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    
+    margin-left: 2%;
+}
+
+h1 {
+    align-items: center;
+    justify-content: center;
+    font-size: 15rem;
+}
+
+p{
+    font-size: 2rem;
+    color: rgba(123, 123, 123, 0.5);
+}
+
+/* ---------------------------------------- SCREEN RIGHT ---------------------------------------- */
+
+
+#screenRight{
+    width: 30%;
+    height: 80%;
+}
+
+#screenRight div{
+    width: 95%;
+    height: 100%;
+}
+
+#screenRight img {
+    object-fit: contain;
+    height: 60%;
+    width: 80%;
+}
+
+
+/* ---------------------------------------- MEDIA QUERY ---------------------------------------- */
+
+@media only screen and (max-width: 1080px){
+    #corpo{
+        justify-content: center;
+    }
+
+    #linha{
+        display: none;
+    }
+
+    #screenRight{
+        display: none;
+    }
+
+    #screenCenter{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    p{
+        text-align: center;
+        font-size: 5rem
+    }
+
+}
